@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Первый семестр</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-img">
+      <img src="C:\Users\Samurai\Documents\ShareX\Screenshots\2024-10\msedge_dgnObVxXc6.png" alt="logo" width="60px">
+      <div class="logo-title">
+        <p>Logo</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="group-info">
+      <p>Группа<u> ЭФБО-06-23</u></p>
+      <p>Евцихевич Максим Андреевич</p>
+      <p>Борисов Дмитрий Валерьевич</p>
+  </div>
+</header>
+<div class="container-navbar">
+  <nav>
+    <a href="Главная.html" class="sss"> Главная</a>
+    <a href="Первый семестр.html" class="sss"> Первый семестр</a>
+    <a href="Второй семестр.html?utm_source=google" class="sss"> Второй семестр</a>
+    <a href="Услуги.html" class="sss"> Услуги</a>
+    <a href="Авторизация.html" class="sss"> Авторизация</a>
+  </nav>
+</div>
+<main class="container">
+    <div class="content">
+        <h1 id="header">Заголовок</h1>
+    </div>
+</main>
+
+
+<style>
+
+    .content {
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    @keyframes slideInOut {
+
+        0% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+    }
+
+    .active {
+        animation: slideInOut 2s ease-in-out infinite;
+    }
+
+    @keyframes glideee {
+
+        0% {
+            transform: translateX(-500px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+
+    }
+
+    .lection {
+
+        display: none;
+
+    }
+
+    .lection.visible {
+        
+        display: block; 
+        animation: glideee 2s linear;
+    }
+
+    @keyframes changeColor {
+        from {
+            background-color: white
+        }
+
+        to {
+            background-color: turquoise
+        }
+    }
+
+    #text2 {
+        background-color: white;
+    }
+
+    #text2.clicked {
+        animation: changeColor 2.5s infinite;
+    }
+
+</style>
+
+<div class="container">
+  <aside class="sidebar">
+    <p>Навигация по странице</p>
+    <ul>
+      <li>Фронтенд</li>
+      <li>Бэкенд</li>
+    </ul>
+  </aside>
+
+   
+
+  <main class="content">
+      <h2 id="greeting">Ждём вас в нашем офисе</h2>
+      <img id="pic2" src="C:\Users\Samurai\Downloads\20241008_235546666.jpg" alt="profile" width="600" height="450">
+      <img id="pic3" src="crash.jpg" alt="profile" width="600" height="450">
+
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac5268ee4fcc15cc0b31b2850cc4bf5810d351fcb7c0321c8bf296e4b1a433466&amp;
+        source=constructor" width="900" height="400" frameborder="0">
+      </iframe>
+
+      <section class="text">
+          <h2>Баллы за скидки</h2>
+          <p id="text1">
+              Вы всегда можете отказаться от расчётов баллами за скидки — просто детализировали сроки и порядок этого процесса (п. 2.6.1). Нужно отправить нам запрос в личном кабинете — мы
+              отключим механику в течение 3 рабочих дней после его получения. Точно так же можем вновь подключить вас к баллам за скидки — в течение 3 рабочих дней после вашего запроса.
+          </p>
+      </section>
+
+      <!--
+
+    <div id="vid" class="video">
+        <iframe width="900" height="550" src="https://rutube.ru/play/embed/413af2fe51991dc5155e798c9737734f/"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+     -->
+
+      <button id="knopka">Показать лекции</button>
+
+      <main>
+          <table class="lection" id=lection>
+              <caption>Лекции</caption>
+              <thead>
+                  <tr>
+                      <th>Номер</th>
+                      <th>Тема</th>
+                      <th>Посещение</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Основы языка HTML</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Углубленное изучение HTML</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Основы работы с CSS</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>Адаптивная верстка, Flexbox и Grid Layout</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>Bootstrap - работа с фреймворком</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>6</td>
+                      <td>Основы языка JavaScript</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>7</td>
+                      <td>Работа с DOM и событиями в JavaScript</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>8</td>
+                      <td>Введение в GitHub и GitHub Poges</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+              </tbody>
+          </table>
+
+
+
+          <section id="text2" class="text">
+              <h2>FBS и FBO: об измерении ОВХ</h2>
+              <p>
+                  Подробнее описали процесс проверки объёмно-весовых характеристик товаров при приёмке или размещении на сортцентрах и складах Ozon
+                  (п. 3.2 Приложения №1 и п. 3.2 раздела «FBS» Приложения №2). Когда фактические габариты и вес не соответствуют данным в карточке:
+              </p>
+          </section>
+          <!--
+        <div class="video">
+            <iframe width="900" height="550" src="https://rutube.ru/play/embed/f876874665d5e40eedb5f39cf4815986/?r=wd&t=55"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        -->
+
+          <button id="show2pr">Показать практики 2 семестра</button>
+
+          <table class="practic" id=practic>
+              <caption>Практики</caption>
+              <thead>
+                  <tr>
+                      <th>Номер</th>
+                      <th>Тема</th>
+                      <th>Посещение</th>
+                      <th>Выполнение</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td id="pr1">Основы языка HTML</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td id="pr2">Формы и кнопки в HTML</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td id="pr3">Таблицы и интерактивные элементы в HTML</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td id="pr4">Основы работы в CSS</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td id="pr5">Работа с классами в CSS</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>6</td>
+                      <td id="pr6">Работа с сетками и разметкой в HTML</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>7</td>
+                      <td id="pr7">Адаптивная верстка</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>8</td>
+                      <td id="pr8">Bootstrap</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>9</td>
+                      <td id="pr9">Основы языка JavaScript</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>10</td>
+                      <td id="pr10">Базовые задачи на JS</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  <tr>
+                      <td>11</td>
+                      <td id="pr11">DOM-структура приложений и работа с обьектами в языке JS</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>12</td>
+                      <td id="pr12">Встраивание скриптов</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>13</td>
+                      <td id="pr13">Отладка сценариев</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>14</td>
+                      <td id="pr14">Анимации и работа с ними</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>15</td>
+                      <td id="pr15">GitHub</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+                  <tr>
+                      <td>16</td>
+                      <td id="pr" 16>Защита проекта</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                      <td><input type="checkbox" name="name1" />&nbsp;</td>
+                  </tr>
+              </tbody>
+          </table>
+      </main>
+
+
+  </main>
+</div>
+
+<form id="myForm">
+    <label for="namee">Имя:</label>
+    <input type="text" id="namee" name="namee"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="date">Дата:</label>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="comment">Комментарий:</label>
+    <textarea id="comment" name="comment"></textarea><br><br>
+
+    <button type="submit" onclick="submitForm()">Отправить</button>
+</form>
+
+<script src="logic.js"></script>
+
+<button id="ismyButton">Нажми меня!</button>
+
+<footer>
+  © Евцихевич М.А, Борисов Д.В, 2024
+</footer>
+
+</body>
+</html>
