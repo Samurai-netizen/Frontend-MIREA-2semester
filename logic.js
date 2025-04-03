@@ -1,5 +1,5 @@
 const header = document.getElementById("header");
-header.textContent = "Dobro pojalovat!";
+header.textContent = "Welcome to the FunkyTown!";
 header.style.color = "red";
 header.classList.add("active");
 const text1 = document.getElementById("text1");
@@ -10,12 +10,12 @@ vid.style.display = "none";
 const mybutton = document.getElementById("ismyButton");
 
 mybutton.addEventListener("click", function () {
-    console.log("������ ������!");
+    console.log("������ ������!");
 });
 */
 const greeting = document.getElementById("greeting");
 header.addEventListener("click", function () {
-    alert("Vi poimali Dobro");
+    alert("Stay FUNKY!");
 });
 
 const text2 = document.getElementById("text2");
@@ -83,7 +83,7 @@ pic2.addEventListener("click", function () {
 });
 
 pic3.addEventListener("dblclick", function () {
-    alert("TOO MUCH CLICKS");
+    alert("НИКТО НЕ ПОСТРАДАЛ (Кроме Вольво)");
 });
 
 
